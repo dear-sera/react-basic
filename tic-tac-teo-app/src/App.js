@@ -59,7 +59,7 @@ function App() {
     'Go to game start';  //0은 False라서 game start로 들어감
     return(
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{desc}</button>
+        <button className='move-button' onClick={() => jumpTo(move)}>{desc}</button>
       </li>
     )
   })
@@ -78,7 +78,7 @@ function App() {
       </div>
       <div className="game-info">
         <div className='status'>{status}</div>
-        <ol>{moves}</ol>
+        <ol style={{ listStyle: 'none' }}>{moves}</ol>
       </div>
 
     </div>
