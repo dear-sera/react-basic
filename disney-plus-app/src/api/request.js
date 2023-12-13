@@ -1,8 +1,8 @@
 // themoviedb api url주소 작성
 
 const requests = {
-    fetchNowPlaying: 'movies/now_playing',
-    fetchTrending: '/trending/all/week',
+    fetchNowPlaying: "movie/now_playing",
+    fetchTrending: "/trending/all/week",
     fetchTopRated: '/movie/top_rated',
     fetchActionMovies: '/discover/movie?with_genres=28',
     fetchComedyMovies: '/discover/movie?with_genres=35',
