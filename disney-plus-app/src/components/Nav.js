@@ -3,14 +3,14 @@ import styled from 'styled-components'
 
 const Nav = () => {
   
-  const [show, handleShow] = useState(false);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {  //useEffect는 react 컴포넌트가 렌더링 될 때마다 특정 작업을 실항하는 Hook
     window.addEventListener('scroll', () => {  //addEventListener는 이벤트가 발생하면 어떤(여기선 scroll) 함수를 호출할 건지 리스너를 등록하는 것
       if (window.scrollY > 50) {  //스크롤이 50이상 넘어가면 이벤트가 발생하여 show를 True변경하여 nav바에 배경 색을 줌
-        handleShow(true);
+        setShow(true);
       } else {
-        handleShow(false);
+        setShow(false);
       }
     })
     return () => {
